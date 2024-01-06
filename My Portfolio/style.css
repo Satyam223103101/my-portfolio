@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(15, 14, 14);
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 22px;
+    background-color: rgb(17, 17, 19); position: fixed;
+    top: 0%;
+    width: 100%;
+}
+ul{
+    display: flex;
+
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-inline: 22px;
+}
+#bar{
+    display: none;
+}
+#edu{
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: rgb(135, 85, 167);
+    color: white;
+    border-radius: 5px;
+}
+ul li a:hover{
+    color: rgb(55, 102, 135);
+    border-bottom: 2px solid rgb(47, 67, 194);
+}
+.logo{
+    font-size: 22px;
+}
+.logo span{
+    color: rgb(33, 95, 181);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 135px;
+    align-items: center;
+    }  
+.mainText h1{
+    font-size: 70px;
+}
+.mainText h1 span{
+    color: rgb(55, 121, 196);
+}
+#cvBtn{
+    font-size: 15px;
+}
+.mainText h1{
+    font-size: 28px;
+}
+.main img{
+  border-radius: 50px;
+  height: 350px;
+  border: 2px solid green;
+  margin-inline: 55px;
+/* filter: drop-shadow(10px 10px 20px rgb(87,87,87)); */
+}
+.mainText p{
+    font-size: 30px;
+}
+.mainText button{
+  width: 140px;
+  height: 40px;
+  background-color: rgb(21, 66, 163);
+  font-size: 15px;
+  border: none;
+  margin-top: 24px;
+  color: white;
+  border-radius: 5px;
+}
+button:hover{
+    border: 2px solid rgb(26, 28, 125);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.head{
+    text-align: center;
+    padding: 80px;
+
+}
+.head span{
+    color: aqua;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 28, 28);
+    padding: 22px;
+
+}
+.about img{
+    width: 250px;
+    border-radius: 20%;
+    border: 3px solid rgb(0, 136, 255);
+    margin-inline: 55px;
+
+}
+.aboutText p{
+    margin-top: 22px;
+}
+.aboutText h2 span{
+    color: rgb(15, 64, 188);
+}
+.aboutText p span{
+    color: white;
+}
+.aboutText h2{
+    font-size: 30px;
+}
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 250px;
+    padding: 22px;
+    background-color:rgb(34, 34, 34) ;
+    margin-inline: 20px;
+    border-radius: 5px;
+    margin-top: 22px;
+}
+.card p{
+    margin-top: 11px;
+}
+.card i{
+    font-size: 26px;
+}
+.mywork{
+    display: flex;
+    justify-content: centre;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 22px;
+
+}
+.workcard{
+    width: 300px;
+    height: 310px;
+    background-color: #1c1b1b ;
+    border-radius: 5px;
+    margin-inline: 20px;
+    padding: 11px ;
+    margin-top: 22px;
+}
+.workcard img{
+    width: 100%;
+    height: 200px;
+}
+.workcard p{
+    margin-top: 11px;
+
+}
+.workcard a{
+    text-decoration: none;
+    position: absolute;
+    margin-top: 20px;
+    padding: 6px 12px;
+    background-color: rgb(0,  128, 255);
+color: white;
+}
+.contact{
+    width: 300px;
+    padding: 20px;
+    background-color:#252525 ;
+    margin: auto;
+}
+.contact input{
+    width: 90%;
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-top: 3px;
+}
+.contact p{
+    margin-top: 20px ;
+
+}
+.contact button{
+    width: 90px;
+    height: 28px;
+    background-color: rgb(0, 145, 255);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 22px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 55px;
+    height: 30px;
+    margin-top: 66px;
+    background-color: rgb(52, 51, 51);
+}
+.text a{
+    margin-top: 12px;
+    color: red;
+    display: flex;
+}
+@media screen and (max-width:1000px){
+    .main{
+        display: block;
+        text-align: center;
+        margin-top: 155px;
+    }
+}
+@media screen and (max-width:800px){
+    ul{
+        display: none;
+    }
+    .showData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:23px;
+        background-color: rgb(60,59,59);
+        gap: 20px ;
+        border-radius: 5px; 
+        position:fixed;  
+        top: 75px;
+        left: 3%;
+     }
+        
+    #bar{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}   
+@media screen and (max-width:500px){
+    .mainText h1{
+        font-size: 36px;
+
+    }
+    .mainText h3{
+        font-size: 22px;
+    }
+    .mainText p{
+        font-size: 20px;
+
+    }
+    .main img{
+        width: 90%;
+    }
+
+}
+.contact{
+    width: 80%;
+}
